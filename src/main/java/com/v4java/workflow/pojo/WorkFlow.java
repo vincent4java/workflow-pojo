@@ -22,6 +22,7 @@ public class WorkFlow implements Pojo {
 	private Integer jobsId;// '待审批岗位id',
 	private Integer workflowNode ;// '审批节点',
 	private Integer status ;// '0 未开始审批，可以编辑更改 1 正在审批，不可以编辑更改 2 审批结束，不可以编辑更改',
+	private Integer isDelete ;// 
 	private String json;
 	private Timestamp createTime ;//
 	private Timestamp updateTime ;//
@@ -129,6 +130,12 @@ public class WorkFlow implements Pojo {
 	}
 	public void setWorkFlowCode(String workFlowCode) {
 		this.workFlowCode = workFlowCode;
+	}
+	public Integer getIsDelete() {
+		return isDelete;
+	}
+	public void setIsDelete(Integer isDelete) {
+		this.isDelete = isDelete;
 	}
 	
 }
